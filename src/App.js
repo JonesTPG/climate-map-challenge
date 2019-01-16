@@ -49,7 +49,7 @@ function App() {
 
           setObservationLocations(data.locations
             .map(loc => {
-              const [lon, lat] = loc.info.position.map(parseFloat);
+              const [lat, lon] = loc.info.position.map(parseFloat);
               return {...loc, position: {lat, lon}}
             })
           );
@@ -69,7 +69,7 @@ function App() {
         subdomains='abcd'
         maxZoom={19}
       />
-      {observationLocations.map(loc => <Marker position={[loc.position.lon, loc.position.lat]}
+      {observationLocations.map(loc => <Marker position={[loc.position.lat, loc.position.lon]}
                                                key={loc.info.id} onClick={() => setSelectedLocation(loc.info.id)}>
       </Marker>)}
     </MapContainer>
