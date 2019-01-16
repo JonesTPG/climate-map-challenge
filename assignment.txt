@@ -1,0 +1,10 @@
+MITÄ ON TEHTY JA MIKSI?
+
+
+
+1. Bugin löytäminen:
+
+    Huomasin nopeasti että kartalla oli suomalaisten paikkakuntien markkereita, mutta ne näkyivät karttapohjalla väärässä paikassa. Tarkastelin koodia
+    ja näin että markerit laitetaan map-funktiolla oikealle paikalleen. Virhe siinä siis vaikuttaa joka ikiseen markkeriin. Kokeilin vaihtaa latitude ja longitude -arvot toisin
+    päin sen enempää miettimättä ja sen jälkeen markkerit tulivatkin oikealle paikalleen.
+
